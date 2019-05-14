@@ -20,7 +20,16 @@
 	
 	window.addEventListener("load",()=>{
 		let img=document.querySelector("img");
-		c.drawImage(img,55,0,117,250,0,-40,250,372);	
+		c.drawImage(img,55,35,117,250,0,-10,250,410);
+		c.shadowOffsetX=0;
+		c.shadowOffsetY=0;
+		c.shadowColor="yellow";
+		c.shadowBlur=20;
+		
+		c.fillStyle="red";
+		c.arc(95,110,20,0,(Math.PI/180)*360);
+		c.globalAlpha=0.3;
+		c.fill();
 	});
 
 	/*
