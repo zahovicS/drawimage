@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		canvas
+		{
+			border: solid black;
+		}
+	</style>
+</head>
+<body>
+<img src="image.jpg"  />
+<canvas></canvas>
+<script type="text/javascript">
+	let canvas = document.querySelector("canvas");
+	let c=canvas.getContext("2d");
+	canvas.width=250;
+	canvas.height=250;
+	
+	window.addEventListener("load",()=>{
+		let img=document.querySelector("img");
+		c.drawImage(img,55,0,117,250,0,-40,250,372);	
+	});
+
+	/*
+	window.onload = function() 
+	{
+		let img=document.querySelector("img");
+		c.drawImage(img, 0, 0);
+	}*/
+
+</script>
+</body>
+</html>
